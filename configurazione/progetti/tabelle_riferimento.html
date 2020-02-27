@@ -62,8 +62,8 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Indice" href="../../genindex.html" />
     <link rel="search" title="Cerca" href="../../search.html" />
-    <link rel="next" title="Documenti Contabili" href="../../documenti_contabili/index.html" />
-    <link rel="prev" title="Area Progettuale" href="area_progettuale.html" />
+    <link rel="next" title="Gruppo di Azioni Elementari - GAE" href="../gae.html" />
+    <link rel="prev" title="Progetto" href="progetto.html" />
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
   </head>
@@ -286,46 +286,16 @@
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
-      <a href="../struttura_organizzativa.html" class="md-nav__link">Struttura Organizzativa</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
-      <a href="../gae.html" class="md-nav__link">Gruppo di Azioni Elementari - GAE</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
-      <a href="../piano_conti_finanziario.html" class="md-nav__link">Piano dei Conti Finanziario</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
-      <a href="../anagrafica_clienti_fornitori.html" class="md-nav__link">Anagrafica Clienti/Fornitori</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
-      <a href="../terzi.html" class="md-nav__link">Terzo</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
-      <a href="../tabelle_riferimento.html" class="md-nav__link">Tabelle di Riferimento</a>
-      
-    </li>
-    <li class="md-nav__item">
-    
       <a href="index.html" class="md-nav__link">Progetti di Ricerca</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
     
-      <a href="progetto.html" class="md-nav__link">Progetto</a>
+      <a href="area_progettuale.html" class="md-nav__link">Area Progettuale</a>
       
     </li>
     <li class="md-nav__item">
     
-      <a href="area_progettuale.html" class="md-nav__link">Area Progettuale</a>
+      <a href="progetto.html" class="md-nav__link">Progetto</a>
       
     </li>
     <li class="md-nav__item">
@@ -362,6 +332,8 @@
         <li class="md-nav__item"><a href="#responsabile-del-progetto" class="md-nav__link">Responsabile del Progetto</a>
         </li>
         <li class="md-nav__item"><a href="#tipo-finanziamento" class="md-nav__link">Tipo Finanziamento</a>
+        </li>
+        <li class="md-nav__item"><a href="#voci-del-piano-economico-progetti" class="md-nav__link">Voci del Piano Economico Progetti</a>
         </li></ul>
             </nav>
         </li>
@@ -381,8 +353,43 @@
     
       <a href="#tipo-finanziamento" class="md-nav__link">Tipo Finanziamento</a>
       
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="#voci-del-piano-economico-progetti" class="md-nav__link">Voci del Piano Economico Progetti</a>
+      
     </li></ul>
     </li></ul>
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../gae.html" class="md-nav__link">Gruppo di Azioni Elementari - GAE</a>
+      
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../piano_conti_finanziario.html" class="md-nav__link">Piano dei Conti Finanziario</a>
+      
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../struttura_organizzativa.html" class="md-nav__link">Struttura Organizzativa</a>
+      
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../anagrafica_clienti_fornitori.html" class="md-nav__link">Anagrafica Clienti/Fornitori</a>
+      
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../terzi.html" class="md-nav__link">Terzo</a>
+      
+    </li>
+    <li class="md-nav__item">
+    
+      <a href="../tabelle_riferimento.html" class="md-nav__link">Tabelle di Riferimento</a>
+      
     </li></ul>
     </li>
     <li class="md-nav__item">
@@ -432,6 +439,8 @@
         <li class="md-nav__item"><a href="#responsabile-del-progetto" class="md-nav__link">Responsabile del Progetto</a>
         </li>
         <li class="md-nav__item"><a href="#tipo-finanziamento" class="md-nav__link">Tipo Finanziamento</a>
+        </li>
+        <li class="md-nav__item"><a href="#voci-del-piano-economico-progetti" class="md-nav__link">Voci del Piano Economico Progetti</a>
         </li></ul>
             </nav>
         </li>
@@ -470,20 +479,123 @@ I tipi Finanziamento attualmente predefiniti sono:
 -       Attività commerciale a tariffario.</p>
 <p>I Parametri (impostabili a Si oppure a No) che possono essere gestiti per ogni tipologia di Finanziamento sono:</p>
 <ul class="simple">
-<li><p>Piano economico-finanziario - Richiesta la compilazione del Piano Economico</p></li>
-<li><p>Associazione categoria-voci per il personale tempo indeterminato consentita - E” possibile utilizzare voci di personale T.I.</p></li>
-<li><p>Associazione categoria-voci per il personale tempo determinato consentita - E” possibile utilizzare voci di personale T.D.</p></li>
-<li><p>Associazione categoria-voci per altre spese del personale - E” possibile utilizzare voci di tipo personale</p></li>
+<li><p>Piano economico-finanziario - Obbligatoria la compilazione del Piano Economico</p></li>
+<li><p>Associazione categoria-voci del piano per il personale tempo indeterminato - E” possibile associare al progetto voci economiche di tipo personale T.I.</p></li>
+<li><p>Associazione categoria-voci del piano per il personale tempo determinato - E” possibile associare al progetto voci economiche di tipo personale T.D.</p></li>
+<li><p>Associazione categoria-voci del piano per altre spese del personale - E” possibile associare al progetto voci economiche di tipo personale</p></li>
 <li><p>Previsione Entrata/Spesa consentita - Consentita la compilazione della previsione sia di entrata che di spesa</p></li>
-<li><p>Ripartizione costi del personale</p></li>
-<li><p>Quadratura pdgp con quota annuale del piano economico</p></li>
-<li><p>Controllo validità del Progetto</p></li>
-<li><p>Piano delle rendicontazioni</p></li>
-<li><p>Variazioni consentite</p></li>
-<li><p>Incassi consentiti</p></li>
-<li><p>Previsione totale quota finanziata</p></li>
-<li><p>Quadra Associazione Progetto/Contratti</p></li>
-<li><p>Consenti Associazione Progetto/Contratti</p></li>
+<li><p>Ripartizione costi del personale      - Consentita la ripartizione delle matricole in fase di previsione</p></li>
+<li><p>Quadratura pdgp con quota annuale del piano economico - Non utilizzato. In previsione il controllo fisso è: importo di previsione deve essere minore o uguale dell’importo specificato per l’anno sul piano economico del progetto</p></li>
+<li><p>Controllo validità del Progetto - Non utilizzato</p></li>
+<li><p>Piano delle rendicontazioni   - Non utilizzato</p></li>
+<li><p>Variazioni consentite         - Non utilizzato</p></li>
+<li><p>Incassi consentiti    - Non utilizzato</p></li>
+<li><p>Previsione totale quota finanziata - Richiede la quadratura tra l’importo totale indicato in previsione per le fonti decentrate esterne e l’importo finanziato indicato sul piano economico del progetto</p></li>
+<li><p>Quadra Associazione Progetto/Contratti        - Richiede la quadratura tra importo Finanziato del Progetto e la somma dei contratti attivi</p></li>
+<li><p>Consenti Associazione Progetto/Contratti - Consente l’associazione dei contratti al progetto.</p></li>
+</ul>
+<p>Di seguito si riporta un ripilogo dei Tipi Finanziamento e le loro regole operative.</p>
+<p><strong>Riepilogo Tipologie di Finanziamento</strong></p>
+<table>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 8%"/>
+<col style="width: 14%"/>
+<col style="width: 32%"/>
+<col style="width: 17%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tipologie
+Finanziamento</p></th>
+<th class="head"><p>Obbligo
+Durata</p></th>
+<th class="head"><p>Obbligo
+Piano Economico</p></th>
+<th class="head"><p>Consentita
+Previsione</p></th>
+<th class="head"><p>Consentito Scarico
+Costi del Personale</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FOE</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+<td><p>SI - STATO APPROVATO</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-odd"><td><p>FOE PROGETTI</p></td>
+<td><p>SI</p></td>
+<td><p>SI</p></td>
+<td><p>NON CONSENTITA</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-even"><td><p>AUTOFINANZIAMENTO</p></td>
+<td><p>SI</p></td>
+<td><p>SI</p></td>
+<td><p>NON CONSENTITA</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-odd"><td><p>AUTOFINNZIAMENTO AREE</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+<td><p>SI - STATO APPROVATO</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-even"><td><p>RIMBORSO DA SOGGETTI TERZI</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+<td><p>SI - STATO APPROVATO</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-odd"><td><p>COFINANZIAMENTO</p></td>
+<td><p>SI</p></td>
+<td><p>SI</p></td>
+<td><p>SI - STATO APPROVATO E NEGOZIAZIONE</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-even"><td><p>FINANZIAMENTO</p></td>
+<td><p>SI</p></td>
+<td><p>SI</p></td>
+<td><p>SI - STATO APPROVATO E NEGOZIAZIONE</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-odd"><td><p>ATTIVITA” COMMERCIALE PURA</p></td>
+<td><p>SI</p></td>
+<td><p>SI</p></td>
+<td><p>SI - STATO APPROVATO</p></td>
+<td><p>SI</p></td>
+</tr>
+<tr class="row-even"><td><p>ATTIVITA” COMMERCIALE A TARIFFARIO</p></td>
+<td><p>NO</p></td>
+<td><p>NO</p></td>
+<td><p>NON CONSENTITA</p></td>
+<td><p>SI</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<span id="voce-del-piano-economico"></span><h2 id="voci-del-piano-economico-progetti">Voci del Piano Economico Progetti<a class="headerlink" href="#voci-del-piano-economico-progetti" title="Link a questa intestazione">¶</a></h2>
+<p>Le Voci del Piano Economico rappresentano le categorie di spesa in cui si suddivide un progetto. Solitamente sono le stesse definite dal finanziatore e per e quali occorrerà produrre la rendicontazione. In Sigla sono inserite in un’apposita anagrafica configurabile dall’amministratore del sistema. A titolo di esempio possiamo citare le seguenti voci di spesa solitamente utilizzate:</p>
+<ul class="simple">
+<li><p>Spese di Trasferta</p></li>
+<li><p>Personale a Tempo Determinato</p></li>
+<li><p>Personale a Tempo Indeterminato</p></li>
+<li><p>Altro Personale</p></li>
+<li><p>Spese Generali</p></li>
+<li><p>Consulenze</p></li>
+<li><p>Investimenti</p></li>
+<li><p>Altro</p></li>
+</ul>
+<p>Ci sono delle Voci economiche del Piano che automaticamente proporranno delle voci finanziarie per mezzo di un’associazione obbligatoria creata da chi amministra queste informazioni (ad esempio le voci del personale). Per queste casistiche le voci del piano economico  sono vincolate alle voci finanziare da usare e, viceversa, queste voci finanziarie non potranno essere usate per altre voci economiche.
+Per queste configurazioni le Voci Economiche sono caratterizzate da alcune impostazioni:</p>
+<ul class="simple">
+<li><p>Tipologa predefinita (Personale Tempo Indeterinato, Personale TempoDeterminato, Altro Personale …)</p></li>
+<li><p>Associazione Automatica Voci finanziarie (S/N)</p></li>
+<li><p>Associazione Manuale voci finanziarie (S/N)</p></li>
+<li><p>Obbligo quadratura tra importo di previsione e quota finanziata</p></li>
+<li><p>Validità (S/N)</p></li>
 </ul>
 
 
@@ -498,7 +610,7 @@ I tipi Finanziamento attualmente predefiniti sono:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
     
-        <a href="area_progettuale.html"
+        <a href="progetto.html"
            class="md-flex md-footer-nav__link md-footer-nav__link--prev"
            rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -506,17 +618,17 @@ I tipi Finanziamento attualmente predefiniti sono:
             </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                         <span class="md-flex__ellipsis">
-                          <span class="md-footer-nav__direction"> Precedente </span> Area Progettuale </span>
+                          <span class="md-footer-nav__direction"> Precedente </span> Progetto </span>
             </div>
         </a>
     
     
-        <a href="../../documenti_contabili/index.html"
+        <a href="../gae.html"
            class="md-flex md-footer-nav__link md-footer-nav__link--next"
            rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                     class="md-flex__ellipsis"> <span
-                    class="md-footer-nav__direction"> Successivo </span> Documenti Contabili </span>
+                    class="md-footer-nav__direction"> Successivo </span> Gruppo di Azioni Elementari - GAE </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                     class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
