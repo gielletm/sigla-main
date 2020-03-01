@@ -162,7 +162,7 @@
                     <a target="_blank" class="mdl-menu__item" href="../Manuale-SIGLA.pdf"><i class="material-icons icon-middle navy">picture_as_pdf</i> Scarica <b>pdf</b></a>
                     <a target="_blank" class="mdl-menu__item mdl-menu__item--full-bleed-divider" href="../Manuale-SIGLA.epub"><i class="material-icons icon-middle navy">cloud_download</i> Scarica <b>epub</b></a>
                     <a class="mdl-menu__item" href="../CHANGELOG.html"><i class="material-icons icon-middle navy">format_list_numbered</i> Changelog</a>
-                    <a class="mdl-menu__item" href="https://github.com/consiglionazionaledellericerche/sigla-main/edit/master/docs/funzionalita_servizio/coda_di_stampa.md"><i class="material-icons icon-middle navy">edit</i> Modifica</a>
+                    <a class="mdl-menu__item" href="https://github.com/consiglionazionaledellericerche/sigla-main/edit/master/docs/funzionalita_servizio/coda_di_stampa.rst"><i class="material-icons icon-middle navy">edit</i> Modifica</a>
                 </ul>
             </div>
             
@@ -187,7 +187,7 @@
 
     
 
-<a href="https://github.com/consiglionazionaledellericerche/sigla-main/blob/master/docs/funzionalita_servizio/coda_di_stampa.md" title="Visualizza la pagina" class="md-source" data-md-source="github">
+<a href="https://github.com/consiglionazionaledellericerche/sigla-main/blob/master/docs/funzionalita_servizio/coda_di_stampa.rst" title="Visualizza la pagina" class="md-source" data-md-source="github">
     
     <div class="md-source__icon">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
@@ -255,7 +255,7 @@
 
     
 
-<a href="https://github.com/consiglionazionaledellericerche/sigla-main/blob/master/docs/funzionalita_servizio/coda_di_stampa.md" title="Visualizza la pagina" class="md-source" data-md-source="github">
+<a href="https://github.com/consiglionazionaledellericerche/sigla-main/blob/master/docs/funzionalita_servizio/coda_di_stampa.rst" title="Visualizza la pagina" class="md-source" data-md-source="github">
     
     <div class="md-source__icon">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
@@ -384,7 +384,7 @@
   
 <h1 id="funzionalita-servizio-coda-di-stampa--page-root">Coda di Stampa<a class="headerlink" href="#funzionalita-servizio-coda-di-stampa--page-root" title="Link a questa intestazione">¶</a></h1>
 <p>Le mappe di lancio stampa si presentano con le seguenti icone:</p>
-<p><img alt="../_images/print_4.png" src="../_images/print_4.png"/></p>
+<p>![](../screenshot/print_4.png)</p>
 <p>Successivamente al lancio della stampa è possibile inserire una descrizione e cambiare la visibilità della stampa eseguita:</p>
 <ul class="simple">
 <li><p>Utente (<strong>default</strong>)</p></li>
@@ -394,12 +394,28 @@
 <li><p>Ente</p></li>
 <li><p>Pubblico</p></li>
 </ul>
-<p><img alt="../_images/print_6.png" src="../_images/print_6.png"/></p>
+<p>![](../screenshot/print_6.png)</p>
 <p>Inoltre attivando la spunta su <strong>Invia E-Mail con la stampa allegata</strong> è possibile ricevere via E-mail il contenuto della stampa,
 inoltre è possibile schedulare la produzione della stampa stessa secondo i parametri presenti nella maschera.</p>
-<p><img alt="../_images/print_7.png" src="../_images/print_7.png"/></p>
-<p>E il riporto nella mappa della coda di stampe:</p>
-<p><img alt="../_images/print_5.png" src="../_images/print_5.png"/></p>
+<p>![](../screenshot/print_7.png)</p>
+<p>Indicando nell'ultimo box una data/ora, una unità di intervallo (giorni/
+settimane/mesi) ed un <strong>valore per l’unità di intervallo</strong> (1 giorno, 5 giorni, 2 settimane, ecc.) si
+indica a SIGLA:
+- di eseguire quella particolare stampa a partire da quella data/ora con la cadenza indicata;
+- di inviarla automaticamente agli indirizzi e-mail indicati.</p>
+<p>Tale funzionalità, naturalmente disponibile <strong>per ogni stampa della procedura</strong>, può essere utile nei
+casi in cui un utente richieda a SIGLA delle stampe con una certa regolarità oppure, cosa ancora più
+importante, nei casi in cui il destinatario finale della stampa non sia un utente corrente di SIGLA
+(p.e. ricercatori, direttori di istituto, ecc.).Il destinatario della mail ha la possibilità di cancellarsi dalla lista di distribuzione della stampa
+attraverso un link presente nel corpo della mail.</p>
+<p>Verrà fornito un messaggio che chiede conferma della volontà di rimuovere la casella di posta
+elettronica dalla lista di distribuzione. Se si prosegue verrà inviata una e-mail di notifica della
+cancellazione.
+Inoltre, a seconda della <strong>visibilità</strong> conferita alla coda di stampa, l’utente che ha schedulato una
+stampa (oppure tutti gli utenti dello stesso CdR, della stessa U.O., ecc.) ha la possibilità di
+cancellare la coda di stampa eliminando di fatto la schedulazione della stessa.</p>
+<p>Ed infine il riporto nella mappa della coda di stampe:</p>
+<p>![](../screenshot/print_5.png)</p>
 
 
 
