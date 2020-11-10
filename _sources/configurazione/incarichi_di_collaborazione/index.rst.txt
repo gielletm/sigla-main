@@ -1,12 +1,18 @@
+Incarichi di collaborazione
 ===========================
-Incarichi di Collaborazione
-===========================
+
+**Le procedure per il conferimento di incarichi di collaborazione**
+
+*(in attuazione del Disciplinare prot. PRESID-CNR n. 6498 del 14/11/2007
+e successive modifiche ed integrazioni )*
 
 .. toctree::
-   :maxdepth: -1
+  :maxdepth: 2
+  :caption: Indice dei contenuti
 
-   premessa
-   verifica_professionalita_interne
-   procedura_conferimento
-   utilita
-   tabelle_riferimento
+  premessa-e-ambito-di-applicazione.rst
+  applicazione-parziale-del-disciplinare-art.-14-comma-2.rst
+  le-tipologie-di-rapporti-esclusi.rst
+  il-limite-della-retribuzione-da-corrispondere-per-gli-incarichi.rst
+  divieto-di-pagamenti-anticipati.rst
+  section.rst
