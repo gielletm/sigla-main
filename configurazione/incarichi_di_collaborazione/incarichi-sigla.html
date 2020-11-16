@@ -809,7 +809,8 @@
 <p>Con le funzioni suddette è possibile gestire sia il di conferimento di un singolo incarico <strong>(Mono-Incarico)</strong> che l’affidamento di più incarichi della stessa tipologia con un’unica procedura di conferimento <strong>(Multi-Incarico)</strong>.</p>
 <p>Naturalmente, in quest’ultimo caso, è necessario che gli incarichi da conferire abbiano:</p>
 <ul class="simple">
-<li><p>la medesima attività da svolgere; • il medesimo importo del corrispettivo;</p></li>
+<li><p>la medesima attività da svolgere;</p></li>
+<li><p>il medesimo importo del corrispettivo;</p></li>
 <li><p>la medesima tipologia contrattuale.</p></li>
 </ul>
 <p>Sono stati rilasciati i seguenti accessi :</p>
@@ -947,10 +948,11 @@ CNR.</p>
 <div class="section" id="esito-della-ricerca-di-professionalita-interne">
 <h3><span class="section-number">3.7.12.1.2. </span>Esito della Ricerca di Professionalità Interne<a class="headerlink" href="#esito-della-ricerca-di-professionalita-interne" title="Link a questa intestazione">¶</a></h3>
 <p>Il sistema controlla in automatico la scadenza delle richieste pubblicate. Il giorno successivo alla data di scadenza la richiesta viene posta in stato di Scadenza aprendo all’utenza, con il ruolo di Direttore di Istituto, la possibilità di inserire l’esito della ricerca interna.</p>
-<p>Nel caso di <strong>Mono-Incarico,</strong> va compilato il riquadro dell’Esito della ricerca con le seguenti possibilità:</p>
+<p>Nel caso di:</p>
+<p><strong>Mono-Incarico,</strong> va compilato il riquadro dell’Esito della ricerca con le seguenti possibilità:</p>
 <p><strong>Conforme alla richiesta</strong> : la richiesta viene passata nello stato di chiusa e non viene attivato il bottone “Avvia Procedura Conferimento Incarico”.</p>
-<p><strong>Non conforme alla richiesta</strong> oppure <strong>Non pervenute candidature :</strong>
-la richiesta viene sempre salvata nello stato di chiusa, ma viene attivato il bottone “Avvia Procedura Conferimento Incarico” che consente di avviare la Procedura di conferimento incarico (provvisoria) ad un soggetto esterno.</p>
+<p><strong>Non conforme alla richiesta</strong> oppure <strong>Non pervenute candidature :</strong></p>
+<p>la richiesta viene sempre salvata nello stato di chiusa, ma viene attivato il bottone “Avvia Procedura Conferimento Incarico” che consente di avviare la Procedura di conferimento incarico (provvisoria) ad un soggetto esterno.</p>
 <p>Nel caso di <strong>Multi-Incarico</strong>, va compilato il riquadro dell’Esito della ricerca individuando:</p>
 <ul class="simple">
 <li><p>il numero di risorse trovate e <strong>conformi alla richiesta</strong>,</p></li>
@@ -967,7 +969,7 @@ di registrazione della “Procedura di Conferimento Incarico” (provvisorio) ad
 <div class="section" id="procedura-conferimento-incarichi-e-gestione-incarichi">
 <h1><span class="section-number">3.7.13. </span>Procedura Conferimento Incarichi e Gestione Incarichi<a class="headerlink" href="#procedura-conferimento-incarichi-e-gestione-incarichi" title="Link a questa intestazione">¶</a></h1>
 <p>La funzione “Procedura conferimento Incarichi” è stata implementata al fine di consentire agli utenti di gestire, con un’unica procedura, l’affidamento di più incarichi della stessa tipologia.</p>
-<p>Nel caso di avvio di una “Procedura di conferimento <strong>Multi-Incarico</strong>” la funzione, nel folder “Incarichi”, consente l’associazione di più incarichi.</p>
+<p>Nel caso di avvio di una “Procedura di conferimento <strong>Multi-Incarico</strong> la funzione, nel folder “Incarichi”, consente l’associazione di più incarichi.</p>
 <p>La funzione implementata in SIGLA consente la gestione di tutti gli adempimenti essenziali per l’affidamento di uno o più incarichi nella forma di collaborazione occasionale (con o senza partita Iva) o di collaborazione coordinata e continuativa. Tale funzione si compone di quattro folder :</p>
 <p><strong>Procedura;</strong></p>
 <p><strong>Importo per anno;</strong></p>
@@ -996,21 +998,19 @@ di registrazione della “Procedura di Conferimento Incarico” (provvisorio) ad
 </ul>
 <p>In stato “definitivo” l’incarico può essere collegato a compensi e/o minicarriere.</p>
 <p>Inoltre è possibile modificare la ripartizione della spesa presunta sui vari esercizi, sempre nel rispetto dei limiti di spesa.</p>
-<blockquote>
-<div><p>Annullata : Il passaggio di stato, consentito solo al Direttore</p>
-</div></blockquote>
 <ul class="simple">
+<li><p>Annullata : Il passaggio di stato, consentito solo al Direttore</p></li>
 <li><p>Chiusa : Il passaggio di stato, consentito solo al Direttore, avviene cliccando sull’icona “Concludi Incarico”. Solo gli incarichi collegati ad almeno un compenso possono assumere tale stato. Un incarico risulta collegato ad un compenso quando “l’importo utilizzato” nel folder “importo per anno” è diverso da zero.</p></li>
 </ul>
 <p>Il passaggio di stato comporta:</p>
-<ul class="simple">
+<ul>
 <li><p>l’impossibilità di utilizzare l’incarico nei compensi e nelle minicarriere;</p></li>
 <li><p>la riduzione dell’importo dell’incarico per un importo pari alla quota già utilizzato;</p></li>
 <li><p>la storicizzazione dell’importo originario del contratto;</p></li>
 <li><p>la possibilità di riutilizzare l’eventuale riferimento della ricerca di professionalità interna (sempre che sia ancora valida) per un altro incarico.</p></li>
-<li><p>Eliminata : Il passaggio di stato, consentito solo al Direttore, avviene cliccando sull’icona “Concludi Incarico”. Solo gli incarichi che non siano stati collegati ad un compenso possono assumere tale stato. Un incarico risulta non collegato ad un compenso quando “l’importo utilizzato” nel folder “importo per anno” è uguale a zero.
-Il passaggio di stato comporta:</p>
-<ul>
+<li><p>Eliminata : Il passaggio di stato, consentito solo al Direttore, avviene cliccando sull’icona “Concludi Incarico”. Solo gli incarichi che non siano stati collegati ad un compenso possono assumere tale stato. Un incarico risulta non collegato ad un compenso quando “l’importo utilizzato” nel folder “importo per anno” è uguale a zero.</p>
+<p>Il passaggio di stato comporta:</p>
+<ul class="simple">
 <li><p>l’impossibilità di utilizzare l’incarico nei compensi e nelle minicarriere;</p></li>
 <li><p>la possibilità di riutilizzare l’eventuale riferimento della ricerca di professionalità interna (sempre che sia ancora valida) per un altro incarico.</p></li>
 </ul>
@@ -1136,6 +1136,8 @@ Il passaggio di stato comporta:</p>
 </tr>
 </tbody>
 </table>
+<p>Non è possibile attivare procedure Multi-Incarico in presenza di Procedure amministrative che non prevedono la procedura comparativa.</p>
+<p>Non è possibile attivare procedure Multi-Incarico in presenza di Procedure amministrative che non prevedono la procedura comparativa.</p>
 </div>
 
 
