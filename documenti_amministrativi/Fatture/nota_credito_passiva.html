@@ -807,6 +807,71 @@
           
   <div class="section" id="nota-credito-passiva">
 <h1><span class="section-number">5.1.2. </span>Nota Credito Passiva<a class="headerlink" href="#nota-credito-passiva" title="Link a questa intestazione">¶</a></h1>
+<p>Per poter procedere alla registrazione di una nota di credito bisogna entrare nella funzionalità della gestione delle Fatture Passive, richiamare la fattura passiva a cui si riferisce la nota di credito e cliccare sul pulsante 'Genera Nota Credito'.
+E’ sempre possibile emettere una nota di credito su fatture registrate nell’esercizio in corso (siano esse in stato “contabilizzato” che “pagato”); è possibile emettere note di credito su fatture registrate negli esercizi precedenti se sono in stato contabilizzato, qualora invece siano state pagate è possibile emettere la nota di credito solo se il pagamento è avvenuto nell’esercizio in corso.
+Sono di seguito illustrati i vari folder di cui si compone la maschera “Nota di credito”.</p>
+<p><strong>TESTATA</strong></p>
+<p>Analizziamo ora i vari campi presenti nel folder “Testata”
+-       Progressivo. Tale campo sarà assegnato automaticamente dal sistema al momento del salvataggio della nota di credito.
+-       Data registrazione. Tale campo viene proposto dal sistema e non deve essere mai modificato.
+-       Numero di protocollo. Deve essere riportato il numero di protocollo della nota di credito tale campo non è obbligatorio.
+-       Registrazione IVA. Tale campo sarà compilato automaticamente dal sistema dopo la chiusura mensile dei registri IVA.
+-       N. Registrazione IVA generale. Tale campo sarà compilato automaticamente dal sistema dopo la chiusura mensile dei registri IVA.</p>
+<ul>
+<li><dl class="simple">
+<dt>Tutti i campi relativi a:</dt><dd><ul class="simple">
+<li><p>Tipo;</p></li>
+<li><p>INTRAUE;</p></li>
+<li><p>EXTRAUE;</p></li>
+<li><p>SAN MARINO CON IVA E SENZA IVA;</p></li>
+<li><p>Spedizioniere;</p></li>
+<li><p>Bolla doganale;</p></li>
+<li><p>Autofattura;</p></li>
+<li><p>Sezionale;</p></li>
+</ul>
+</dd>
+</dl>
+<p>Sono tutti ereditati dalla fattura a cui viene legata la nota di credito.</p>
+</li>
+<li><ol class="upperalpha simple" start="14">
+<li><p>Nota di credito. Deve essere inserito il numero della nota di credito.</p></li>
+</ol>
+</li>
+<li><p>Descrizione. Il sistema riporta quello della fattura ma può essere modificata.</p></li>
+<li><p>Data emissione. Deve essere inserita la data di emissione della fattura del fornitore.</p></li>
+<li><p>Data di scadenza. Campo non obbligatorio va indicato la data di scadenza della fattura. (non serve per il trasferimento della liquidità da parte dell’Ufficio Bilancio che prende in considerazione le date di scadenza degli impegni liquidati).</p></li>
+<li><p>Esercizio fattura fornitore. Viene inserito in automatico dal sistema in base alla data di emissione della fattura.</p></li>
+<li><p>Competenza dal/Competenza al. Viene proposta quella della fattura. In caso di fattura con competenza dell’esercizio precedente è necessario mettere la competenza dell’esercizio in corso (in caso di registrazione successiva al 28 febbraio). Nel caso di bene inventariabile deve essere lasciata la data proposta in quanto l’imputazione del costo avviene tramite la quota di ammortamento.</p></li>
+<li><p>Totale. Deve essere indicato  l’importo della nota di credito.</p></li>
+</ul>
+<p>Nel caso di registrazione di nota di credito parziale non sarà possibile registrare il pagamento tramite modello 1210. Si consiglia pertanto di farsi emettere una nota di credito per il totale della vecchia fattura ed una nuova fattura per la differenza.</p>
+<p><strong>FORNITORE</strong></p>
+<p>Tale folder è compilato automaticamente dal sistema che riporta i dati presenti nel corrispondente folder della fattura passiva.</p>
+<p><strong>DETTAGLIO</strong></p>
+<p>Per procedere all’inserimento sarà necessario cliccare su 'Nuovo', il sistema proporrà un elenco di tutte le fatture passive registrate a favore del fornitore, si seleziona la riga corrispondente alla fattura a cui collegare la nota di credito, e tramite il pulsante 'selezione' il sistema proporrà il/i dettaglio/i della fattura precedentemente selezionata. Si seleziona la riga corrispondente ai dettagli a cui legare la nota di credito e il sistema riporta le righe selezionate nel folder dettaglio.  Evidenziando la riga sarà possibile procedere alla modifica dei dati riportati qualora sia necessario.</p>
+<ul class="simple">
+<li><p>Tipo. Tale record non è modificabile: è lo stesso indicato nella fattura passiva.</p></li>
+<li><p>Bene/Servizio. Tale record non è modificabile: è lo stesso indicato nella fattura passiva.</p></li>
+<li><p>I.V.A. Il sistema di “default” propone il codice IVA scelto nella fattura passiva.</p></li>
+<li><p>Descrizione. Campo libero viene proposta quella inserita in testata.</p></li>
+<li><p>Competenza dal/Competenza al. Viene proposta quella del folder dettaglio della fattura. Qualora sia stata modificata la data di competenza in TESTATA tali date devono essere riportate anche in questi campi.
+Descr. fattura origine. Viene riportata la descrizione del dettaglio della fattura di origine, campo non  editabile</p></li>
+<li><p>Quantità. Viene proposto quella della fattura. In caso di nota di credito parziale (e naturalmente quantità inserita diversa da 1) dovrà essere indicata la quantità per la quale si emette la nota di credito. In caso di nota di credito totale tale campo non deve essere modificato.</p></li>
+<li><p>Prezzo. Viene proposto quella della fattura. In caso di nota di credito parziale dovrà essere indicato il prezzo per cui si emette la nota di credito. In caso di nota di credito totale tale campo non deve essere modificato.</p></li>
+<li><p>Imponibile. Viene calcolato dal sistema (quantità * prezzo unitario).</p></li>
+<li><p>Imponibile EURO. Viene calcolato dal sistema.</p></li>
+<li><p>Importo IVA. Viene calcolato dal sistema e dovrà/potrà essere modificato dall’utente solo in caso di non quadratura tra il totale della nota di credito e il totale calcolato da SIGLA (totale prestazione 550,00 - imponibile 454,54 - iva 95,45 - totale 549,99, in tal caso si aggiunge 1 cent. sull’importo IVA si salva attraverso la vicina icona   conferma ed apparirà il messaggio “L'importo IVA e' forzato”.</p></li>
+<li><p>Al fine del salvataggio la somma “Imponibile” + “Importo IVA” deve coincidere con il totale inserito in TESTATA.</p></li>
+<li><p>Mod. pagamento. Viene proposto quella della fattura.</p></li>
+</ul>
+<p>Dopo la compilazione del folder “Dettaglio” si deve provvedere alla contabilizzazione della nota di credito della fattura (legare la stessa all’impegno) si seleziona il dettaglio che si vuole contabilizzare ed il sistema si posizionerà automaticamente sul folder storni.</p>
+<p><strong>CONSUNTIVO</strong></p>
+<p>Tale folder viene compilato in automatico dal sistema tramite la compilazione del folder “dettaglio” e riepiloga i dettagli per codice IVA.</p>
+<p><strong>STORNI</strong></p>
+<p>Dopo la contabilizzazione del dettaglio il sistema si posiziona sul folder storni. Si deve evidenziare la riga e cliccare sul pulsante aggiorna in manuale il sistema rimanda alla maschera degli impegni folder “scadenziario” sulla scadenza collegata al dettaglio della fattura: in caso di nota di credito per l’importo totale tale scadenza dovrà essere pari a zero (ricordarsi di modificare anche  il dettaglio scadenza);  in caso di nota di credito di  importo parziale  ridurre la scadenza per l’importo pari alla nota di credito, creare una nuova scadenza di pari importo della nota di credito (in caso di impegno residuo proprio) o ridurre di pari importo il totale dell’impegno di competenza o sui residui impropri; selezionare nuovamente la riga collegata alla fattura e cliccare su 'riporta'. Il sistema si riposizionerà nel folder storni della nota di credito e si può procedere al salvataggio della nota.</p>
+<p><strong>ACCERTAMENTI</strong></p>
+<p>Se la nota di credito è collegata ad una fattura pagata, e non sono presenti fatture dello stesso fornitore da pagare, il sistema, dopo la contabilizzazione del dettaglio,  propone la maschera della creazione e ricerca dell’accertamento. Dopo la compilazione dell’accertamento cliccando  su “riporta” si ritorna su questo folder e si devono scegliere le modalità di incasso (c/c ente).</p>
+<p><strong>PROTOCOLLO</strong></p>
 </div>
 
 
