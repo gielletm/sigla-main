@@ -825,8 +825,7 @@ Per inserire, ricercare prima la classificazione e poi aggiungere dettagli CDS/I
 Successivamente vanno caricate le tabelle di previsione da cui gli Istituti si scaricano i costi del personale (COSTO_DEL_DIPENDENTE):
 La procedura da lanciare è PCIR009.POPOLAMENTO_COSTO_DIP_PREV</p>
 <blockquote>
-<div><p>** execute POPOLAMENTO_COSTO_DIP_PREV(2021,0)</p>
-</div></blockquote>
+<div>** execute POPOLAMENTO_COSTO_DIP_PREV(2021,0)</div></blockquote>
 <p>Dopo il caricamento bisogna fare un controllo di coerenza delle voci utilizzate(lanciando la select sotto) ed eventualmente sistemare qualche dato!</p>
 <p>select elemento_voce.cd_elemento_voce,ds_elemento_voce,
 sum(IM_A1+IM_ONERI_CNR_A1+IM_TFR_A1) tot_anno1,TI_RAPPORTO,ORIGINE_FONTI,FL_RAPPORTO13
@@ -866,11 +865,10 @@ Risoluzione del problema:
 Saranno ribaltate tutte le voci di bilancio ‘associate automaticamente’ alle categorie del piano economico dei progetti, per tutti i progetti che nel piano economico avevano gestito l’anno nuovo (sia che avessero tali categorie anche nel 2019 sia che le avessero solo nel 2020). In questo modo (dopo il ribaltamento dell’anagrafica voci) vengono ricreate le associazioni automatiche perché in questi casi l’utente non può associare voci autonomamente mentre l’inserimento della previsione controlla che sul piano economico di progetto le classificazioni, e poi le voci, sono presenti.
 INSERT INTO ASS_PROGETTO_PIAECO_VOCE</p>
 <blockquote>
-<div><p>(PG_PROGETTO, CD_UNITA_ORGANIZZATIVA, CD_VOCE_PIANO, ESERCIZIO_PIANO, ESERCIZIO_VOCE, TI_APPARTENENZA, TI_GESTIONE, CD_ELEMENTO_VOCE, DACR, UTCR, DUVA, UTUV, PG_VER_REC)</p>
-</div></blockquote>
-<dl class="simple">
-<dt>SELECT A.PG_PROGETTO, B.CD_UNITA_PIANO, B.CD_VOCE_PIANO, A.ESERCIZIO_PIANO,</dt><dd><p>B.ESERCIZIO, B.TI_APPARTENENZA, B.TI_GESTIONE, B.CD_ELEMENTO_VOCE, TRUNC(SYSDATE), 'SYSTEM', TRUNC(SYSDATE), 'SYSTEM', 0</p>
-</dd>
+<div>(PG_PROGETTO, CD_UNITA_ORGANIZZATIVA, CD_VOCE_PIANO, ESERCIZIO_PIANO, ESERCIZIO_VOCE, TI_APPARTENENZA, TI_GESTIONE, CD_ELEMENTO_VOCE, DACR, UTCR, DUVA, UTUV, PG_VER_REC)</div></blockquote>
+<dl class="docutils">
+<dt>SELECT A.PG_PROGETTO, B.CD_UNITA_PIANO, B.CD_VOCE_PIANO, A.ESERCIZIO_PIANO,</dt>
+<dd>B.ESERCIZIO, B.TI_APPARTENENZA, B.TI_GESTIONE, B.CD_ELEMENTO_VOCE, TRUNC(SYSDATE), 'SYSTEM', TRUNC(SYSDATE), 'SYSTEM', 0</dd>
 </dl>
 <p>FROM PROGETTO_PIANO_ECONOMICO A, ELEMENTO_VOCE B, VOCE_PIANO_ECONOMICO_PRG C
 WHERE A.CD_UNITA_ORGANIZZATIVA = C.CD_UNITA_ORGANIZZATIVA
@@ -883,11 +881,10 @@ AND   A.ESERCIZIO_PIANO = 2020
 --AND   A.PG_PROGETTO=26007
 AND   NOT EXISTS(SELECT 1 FROM ASS_PROGETTO_PIAECO_VOCE D</p>
 <blockquote>
-<div><p>WHERE D.PG_PROGETTO = A.PG_PROGETTO
+<div>WHERE D.PG_PROGETTO = A.PG_PROGETTO
 AND   D.CD_UNITA_ORGANIZZATIVA = A.CD_UNITA_ORGANIZZATIVA
 AND   D.CD_VOCE_PIANO = A.CD_VOCE_PIANO
-AND   D.ESERCIZIO_PIANO = A.ESERCIZIO_PIANO)</p>
-</div></blockquote>
+AND   D.ESERCIZIO_PIANO = A.ESERCIZIO_PIANO)</div></blockquote>
 </div>
 <div class="section" id="rimodulazioni">
 <h1>Rimodulazioni<a class="headerlink" href="#rimodulazioni" title="Link a questa intestazione">¶</a></h1>
@@ -910,13 +907,14 @@ Verificare se ci sono in sospeso Missioni o compensi (cancellare)
 Verificare se ci sono Impegni da ribaltare senza STATO
 Effettuare i ribaltamenti;</p>
 <p>script di ribaltamento (secondo ribaltamento)</p>
-<dl>
-<dt>DECLARE</dt><dd><p>AES NUMBER;
-AMESSAGE VARCHAR2(200);</p>
-</dd>
-<dt>BEGIN</dt><dd><p>AES := 2020;
+<dl class="docutils">
+<dt>DECLARE</dt>
+<dd>AES NUMBER;
+AMESSAGE VARCHAR2(200);</dd>
+<dt>BEGIN</dt>
+<dd><p class="first">AES := 2020;
 AMESSAGE := NULL;</p>
-<p>PCIR009.CNRMIG100.INIT_RIBALTAMENTO_ALTRO ( AES, AMESSAGE );
+<p class="last">PCIR009.CNRMIG100.INIT_RIBALTAMENTO_ALTRO ( AES, AMESSAGE );
 COMMIT;</p>
 </dd>
 </dl>
@@ -925,15 +923,17 @@ COMMIT;</p>
 <div class="section" id="inserimento-uo-non-ribaltata">
 <h1>Inserimento UO non ribaltata<a class="headerlink" href="#inserimento-uo-non-ribaltata" title="Link a questa intestazione">¶</a></h1>
 <p>Solo per inserire la UO 000 non ribaltata perchè aveva esercizio_fine = anno precedente.</p>
-<dl class="simple">
-<dt>Insert into PCIR009.ESERCIZIO</dt><dd><dl class="simple">
-<dt>(CD_CDS, ESERCIZIO, DS_ESERCIZIO, ST_APERTURA_CHIUSURA, DACR,</dt><dd><p>UTCR, DUVA, UTUV, PG_VER_REC, IM_CASSA_INIZIALE)</p>
-</dd>
+<dl class="docutils">
+<dt>Insert into PCIR009.ESERCIZIO</dt>
+<dd><dl class="first last docutils">
+<dt>(CD_CDS, ESERCIZIO, DS_ESERCIZIO, ST_APERTURA_CHIUSURA, DACR,</dt>
+<dd>UTCR, DUVA, UTUV, PG_VER_REC, IM_CASSA_INIZIALE)</dd>
 </dl>
 </dd>
-<dt>Values</dt><dd><dl class="simple">
-<dt>('000', 2020, 'Esercizio contabile 2020', ‘G’, TO_DATE('10/10/2019 17:20:12', 'MM/DD/YYYY HH24:MI:SS'),</dt><dd><p>'$$$$RIBALTAMENTO$$$$', TO_DATE('10/10/2019 17:20:12', 'MM/DD/YYYY HH24:MI:SS'), '$$$$RIBALTAMENTO$$$$', 1, 0);</p>
-</dd>
+<dt>Values</dt>
+<dd><dl class="first last docutils">
+<dt>('000', 2020, 'Esercizio contabile 2020', ‘G’, TO_DATE('10/10/2019 17:20:12', 'MM/DD/YYYY HH24:MI:SS'),</dt>
+<dd>'$$$$RIBALTAMENTO$$$$', TO_DATE('10/10/2019 17:20:12', 'MM/DD/YYYY HH24:MI:SS'), '$$$$RIBALTAMENTO$$$$', 1, 0);</dd>
 </dl>
 </dd>
 </dl>
@@ -1221,7 +1221,6 @@ var DOCUMENTATION_OPTIONS = {
 <script src="_static/js/theme.js"></script>
 <script type="text/javascript" src="_static/underscore.js"></script>
 <script type="text/javascript" src="_static/doctools.js"></script>
-<script type="text/javascript" src="_static/language_data.js"></script>
 <script type="text/javascript" src="_static/translations.js"></script>
   
   <script type="text/javascript">

@@ -672,7 +672,7 @@
 <div class="navbar-toggler--wrap navbar-toggler--wrap--bottom p-3">
   <div class="navbar-toggler navbar-toggler--open p-0 border-0 ml-auto">
     <div class="navbar-toggler-bottom__chapter align-middle text-truncate">
-      <span class="it-list mr-2"></span><span class="section-number">5.1.4. </span>Fattura Attiva
+      <span class="it-list mr-2"></span>5.1.4. Fattura Attiva
     </div>
   </div>
 </div>
@@ -801,21 +801,23 @@
           </div>-->
           
             <div class="footer-buttons footer-buttons--prev" role="navigation" aria-label="footer navigation">
-                <a href="fattura_passiva_elettronica.html" class="" title="5.1.3. Fattura Passiva Elettronica" accesskey="p" rel="prev"> Torna a <span class="section-number">5.1.3. </span>Fattura Passiva Elettronica</a>
+                <a href="fattura_passiva_elettronica.html" class="" title="5.1.3. Fattura Passiva Elettronica" accesskey="p" rel="prev"> Torna a 5.1.3. Fattura Passiva Elettronica</a>
             </div>
           
           
   <div class="section" id="fattura-attiva">
-<h1><span class="section-number">5.1.4. </span>Fattura Attiva<a class="headerlink" href="#fattura-attiva" title="Link a questa intestazione">¶</a></h1>
-<dl>
-<dt>Per poter procedere alla registrazione di una fattura attiva bisogna entrare nell’albero delle funzioni:</dt><dd><p><strong>- Documenti amministrativi</strong></p>
-<blockquote>
+<h1>5.1.4. Fattura Attiva<a class="headerlink" href="#fattura-attiva" title="Link a questa intestazione">¶</a></h1>
+<dl class="docutils">
+<dt>Per poter procedere alla registrazione di una fattura attiva bisogna entrare nell’albero delle funzioni:</dt>
+<dd><p class="first"><strong>- Documenti amministrativi</strong></p>
+<blockquote class="last">
 <div><ul class="simple">
-<li><p>Fatture</p></li>
-<li><dl class="simple">
-<dt>fattura attiva</dt><dd><ul>
-<li><p>visualizzazione</p></li>
-<li><p>gestione</p></li>
+<li>Fatture</li>
+<li><dl class="first docutils">
+<dt>fattura attiva</dt>
+<dd><ul class="first last">
+<li>visualizzazione</li>
+<li>gestione</li>
 </ul>
 </dd>
 </dl>
@@ -829,7 +831,7 @@
 <p><a class="reference internal" href="fattura_attiva_elettronica.html"><span class="doc">Fattura Attiva Elettronica</span></a></p>
 <p>L'emissione di un documento attivo segue le stesse regole rispetto ai dati che l'utente deve inserire in Sigla. Sono di seguito indicati i vari folder di cui si compone la maschera “Fattura Attiva”.</p>
 <p><strong>Testata</strong></p>
-<div class="figure align-default">
+<div class="figure">
 <img alt="../../_images/fatt_att_testata.png" src="../../_images/fatt_att_testata.png" />
 </div>
 <p>Analizziamo ora i vari campi presenti nel folder “Testata” che sono comuni per qualunque tipologia di fattura attiva che verrà emessa.
@@ -847,8 +849,8 @@
 - Mod. pagamento scegliere nel menù a tendina la voce che interessa tenendo presente che:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>BI – Banca d’Italia deve essere scelta tale modalità nel caso il cliente sia  un’amministrazione dello Stato o un Ente Pubblico presente nella tabella A legge 720/84</p></li>
-<li><p>BO – Bonifico su c/c Bancario N.B. il c/c che deve essere fornito ai nostri clienti è  IBAN IT57S0100503392000000218155</p></li>
+<li>BI – Banca d’Italia deve essere scelta tale modalità nel caso il cliente sia  un’amministrazione dello Stato o un Ente Pubblico presente nella tabella A legge 720/84</li>
+<li>BO – Bonifico su c/c Bancario N.B. il c/c che deve essere fornito ai nostri clienti è  IBAN IT57S0100503392000000218155</li>
 </ul>
 </div></blockquote>
 <p>Esaminiamo ora i campi particolari:
@@ -862,50 +864,51 @@
 <p><strong>DETTAGLIO</strong></p>
 <p>Per procedere all’inserimento sarà necessario cliccare su  Nuovo, si creerà una nuova riga che attiverà i campi sottostanti:</p>
 <ul class="simple">
-<li><p>Bene/Servizio dovrà essere inserito il bene/servizio fornito o cliccando su 'azzera' e digitando il codice di riferimento o cliccando su 'cerca' scegliendo dalla tabella beni/servizi sottostante o cliccando su 'ricerca guidata' e impostando dei parametri. Nel caso di fattura emessa a favore di  un residente in un paese INTRA-UE sarà possibile inserire solo beni o servizi a seconda della scelta effettuata in testata.</p></li>
-<li><p>I.V.A. il sistema di “default” propone il codice IVA collegato all’IVA ordinaria. Cliccando su 'azzera' è possibile cambiare il codice IVA da applicare al dettaglio della fattura o inserendo direttamente il codice di riferimento o cliccando su 'cerca' scegliendo dalla tabella proposta.</p></li>
-<li><p>Percentuale IVA% è inserita direttamente dal sistema in base al codice IVA prescelto.</p></li>
-<li><p>Descrizione. Quanto riportato su questo campo apparirà nella stampa della fattura attiva.</p></li>
-<li><p>Competenza dal al vengono proposti direttamente dal sistema uguali a quelli inseriti in testata ma possono essere modificati dall’utente purché ricompresi nell’intervallo del periodo inserito in testata.</p></li>
-<li><p>Quantità. Inserire e salvare attraverso la 'conferma',  in caso di errore utilizzare 'annulla' per annullare l’operazione.</p></li>
-<li><p>Prezzo Unitario. Inserire l’importo del singolo bene/servizio e salvare attraverso la 'conferma',  in caso di errore utilizzare 'annulla' per annullare l’operazione.</p></li>
-<li><p>Importo IVA viene calcolato dal sistema e dovrà/potrà essere modificato dall’utente solo in caso di non quadratura tra il totale prestazione e il totale fatturato (totale prestazione 550,00 - imponibile - 454,54 - iva 95,45 - totale 549,99, in tal caso si aggiunge 1 cent. sull’importo IVA, si salva attraverso la 'conferma', apparirà il messaggio “L'importo IVA e' forzato”. Tale campo sarà riportato in Testata.</p></li>
-<li><p>Imponibile viene calcolato dal sistema (quantità * prezzo unitario). Tale campo sarà riportato in Testata</p></li>
-<li><p>Totale viene calcolato dal sistema (importo IVA + imponibile). Tale campo sarà riportato automaticamente in Testata.</p></li>
+<li>Bene/Servizio dovrà essere inserito il bene/servizio fornito o cliccando su 'azzera' e digitando il codice di riferimento o cliccando su 'cerca' scegliendo dalla tabella beni/servizi sottostante o cliccando su 'ricerca guidata' e impostando dei parametri. Nel caso di fattura emessa a favore di  un residente in un paese INTRA-UE sarà possibile inserire solo beni o servizi a seconda della scelta effettuata in testata.</li>
+<li>I.V.A. il sistema di “default” propone il codice IVA collegato all’IVA ordinaria. Cliccando su 'azzera' è possibile cambiare il codice IVA da applicare al dettaglio della fattura o inserendo direttamente il codice di riferimento o cliccando su 'cerca' scegliendo dalla tabella proposta.</li>
+<li>Percentuale IVA% è inserita direttamente dal sistema in base al codice IVA prescelto.</li>
+<li>Descrizione. Quanto riportato su questo campo apparirà nella stampa della fattura attiva.</li>
+<li>Competenza dal al vengono proposti direttamente dal sistema uguali a quelli inseriti in testata ma possono essere modificati dall’utente purché ricompresi nell’intervallo del periodo inserito in testata.</li>
+<li>Quantità. Inserire e salvare attraverso la 'conferma',  in caso di errore utilizzare 'annulla' per annullare l’operazione.</li>
+<li>Prezzo Unitario. Inserire l’importo del singolo bene/servizio e salvare attraverso la 'conferma',  in caso di errore utilizzare 'annulla' per annullare l’operazione.</li>
+<li>Importo IVA viene calcolato dal sistema e dovrà/potrà essere modificato dall’utente solo in caso di non quadratura tra il totale prestazione e il totale fatturato (totale prestazione 550,00 - imponibile - 454,54 - iva 95,45 - totale 549,99, in tal caso si aggiunge 1 cent. sull’importo IVA, si salva attraverso la 'conferma', apparirà il messaggio “L'importo IVA e' forzato”. Tale campo sarà riportato in Testata.</li>
+<li>Imponibile viene calcolato dal sistema (quantità * prezzo unitario). Tale campo sarà riportato in Testata</li>
+<li>Totale viene calcolato dal sistema (importo IVA + imponibile). Tale campo sarà riportato automaticamente in Testata.</li>
 </ul>
 <p><strong>Caso particolare TARIFFARIO</strong></p>
 <p>Qualora in testata in tipo di documento sia stato scelto “Tariffario” dopo il campo beni/servizio apparirà
 - Tariffario. Dovrà essere inserito il tariffario o cliccando su 'azzera' e digitando il codice di riferimento o cliccando su 'cerca' scegliendo dalla tabella tariffario precedentemente caricata (Scegliendo nell’albero delle funzioni “Fatture” “Tabelle di riferimento” “Tariffario”) o cliccando su 'ricerca guidata' e impostando dei parametri. In tal caso il prezzo unitario viene riportato automaticamente  dal sistema.</p>
 <p><strong>Caso particolare INTRA-UE</strong></p>
 <blockquote>
-<div><p>Qualora  in  testata  sia  stato  spuntato il flag 'INTRA-UE' occorre distinguere se il cliente è un consumatore finale o un soggetto passivo di imposta:</p>
-</div></blockquote>
+<div>Qualora  in  testata  sia  stato  spuntato il flag 'INTRA-UE' occorre distinguere se il cliente è un consumatore finale o un soggetto passivo di imposta:</div></blockquote>
 <ul class="simple">
-<li><p>Consumatore finale indipendentemente dalla scelta effettuata sul record Servizi/Beni la fattura dovrà essere sempre emessa con IVA.</p></li>
-<li><p>Soggetto passivo di imposta dobbiamo in questo caso distinguere tra:</p></li>
+<li>Consumatore finale indipendentemente dalla scelta effettuata sul record Servizi/Beni la fattura dovrà essere sempre emessa con IVA.</li>
+<li>Soggetto passivo di imposta dobbiamo in questo caso distinguere tra:</li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>Beni
-in questo caso la fattura dovrà essere emessa senza IVA (fuori campo) in quanto l’IVA viene acquisita nel paese del cliente e dovrà essere compilato il Modello Intrastat.</p></li>
-<li><p>Servizi
-in questo caso la fattura dovrà essere emessa senza IVA se il servizio prestato rientra nell’applicazione dell’art. 7 ter e dovrà essere compilato il relativo Modello Intrastat; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente effettuati in Italia la fattura sarà emessa con IVA e non dovrà essere compilato il relativo Modello Intrastat; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente non effettuati in Italia la fattura dovrà essere emessa Fuori campo IVA e non dovrà essere compilato il relativo Modello Intrastat.</p></li>
+<li>Beni
+in questo caso la fattura dovrà essere emessa senza IVA (fuori campo) in quanto l’IVA viene acquisita nel paese del cliente e dovrà essere compilato il Modello Intrastat.</li>
+<li>Servizi
+in questo caso la fattura dovrà essere emessa senza IVA se il servizio prestato rientra nell’applicazione dell’art. 7 ter e dovrà essere compilato il relativo Modello Intrastat; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente effettuati in Italia la fattura sarà emessa con IVA e non dovrà essere compilato il relativo Modello Intrastat; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente non effettuati in Italia la fattura dovrà essere emessa Fuori campo IVA e non dovrà essere compilato il relativo Modello Intrastat.</li>
 </ul>
 </div></blockquote>
 <p><strong>Caso particolare EXTRA-UE</strong></p>
 <p>Qualora in testata sia stato spuntato il flag 'EXTRA-UE' occorre distinguere se il cliente è un consumatore finale o un soggetto passivo di imposta:</p>
 <ul class="simple">
-<li><dl class="simple">
-<dt>Consumatore finale dobbiamo in questo caso distinguere tra:</dt><dd><ul>
-<li><p>Servizi la fattura dovrà essere emessa sempre con IVA.</p></li>
+<li><dl class="first docutils">
+<dt>Consumatore finale dobbiamo in questo caso distinguere tra:</dt>
+<dd><ul class="first last">
+<li>Servizi la fattura dovrà essere emessa sempre con IVA.</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>Soggetto passivo di imposta dobbiamo in questo caso distinguere tra:</dt><dd><ul>
-<li><p>Beni in questo caso la fattura dovrà essere emessa non imponibile ai sensi art. 8 con il comma appropriato a seconda dell’esportazione.</p></li>
-<li><p>Servizi in questo caso la fattura dovrà essere emessa senza IVA se il servizio prestato rientra nell’applicazione dell’art. 7 ter; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater  e 7 quinques - territorialmente effettuati in Italia la fattura sarà emessa con IVA; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente non effettuati in Italia la fattura dovrà essere emessa Fuori campo IVA.</p></li>
+<li><dl class="first docutils">
+<dt>Soggetto passivo di imposta dobbiamo in questo caso distinguere tra:</dt>
+<dd><ul class="first last">
+<li>Beni in questo caso la fattura dovrà essere emessa non imponibile ai sensi art. 8 con il comma appropriato a seconda dell’esportazione.</li>
+<li>Servizi in questo caso la fattura dovrà essere emessa senza IVA se il servizio prestato rientra nell’applicazione dell’art. 7 ter; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater  e 7 quinques - territorialmente effettuati in Italia la fattura sarà emessa con IVA; qualora invece fossero Servizi che rientrano nell’ambito dell'art. 7 quater e 7 quinques - territorialmente non effettuati in Italia la fattura dovrà essere emessa Fuori campo IVA.</li>
 </ul>
 </dd>
 </dl>
@@ -931,7 +934,7 @@ Con l'introduzione della Fatturazione elettronica non è più necessario effettu
 
           
             <div class="footer-buttons footer-buttons--next" role="navigation" aria-label="footer navigation">
-                  <a href="nota_credito_attiva.html" class="" title="5.1.5. Nota Credito Attiva" accesskey="n" rel="next"><span class="section-number">5.1.5. </span>Nota Credito Attiva</a>
+                  <a href="nota_credito_attiva.html" class="" title="5.1.5. Nota Credito Attiva" accesskey="n" rel="next">5.1.5. Nota Credito Attiva</a>
               </div>
             
           </div>
@@ -1205,7 +1208,6 @@ var DOCUMENTATION_OPTIONS = {
 <script src="../../_static/js/theme.js"></script>
 <script type="text/javascript" src="../../_static/underscore.js"></script>
 <script type="text/javascript" src="../../_static/doctools.js"></script>
-<script type="text/javascript" src="../../_static/language_data.js"></script>
 <script type="text/javascript" src="../../_static/translations.js"></script>
   
   <script type="text/javascript">
