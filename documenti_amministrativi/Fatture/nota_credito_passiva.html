@@ -807,8 +807,9 @@
           
   <div class="section" id="nota-credito-passiva">
 <h1>5.1.2. Nota Credito Passiva<a class="headerlink" href="#nota-credito-passiva" title="Link a questa intestazione">¶</a></h1>
-<p>Per poter procedere alla registrazione di una nota di credito bisogna entrare nella funzionalità della gestione delle Fatture Passive, richiamare la fattura passiva a cui si riferisce la nota di credito e cliccare sul pulsante 'Genera Nota Credito'.
-E’ sempre possibile emettere una nota di credito su fatture registrate nell’esercizio in corso (siano esse in stato “contabilizzato” che “pagato”); è possibile emettere note di credito su fatture registrate negli esercizi precedenti se sono in stato contabilizzato, qualora invece siano state pagate è possibile emettere la nota di credito solo se il pagamento è avvenuto nell’esercizio in corso.
+<p>Per poter procedere alla registrazione di una nota di credito bisogna entrare nella funzionalità della gestione delle Fatture Passive, richiamare la fattura passiva a cui si riferisce la nota di credito e cliccare sul pulsante 'Genera Nota Credito'.</p>
+<p>Con l'introduzione della fatturazione elettronica, la registrazione di una nota credito, come tutti i documenti passivi elettronici ricevuti, ha inizio dalla funzionalità di 'Fatturazione elettronica' e per le Note Credito/Debito la procedura riporta l'utente direttamente alla fase di registrazione creando il legame alla fattura di riferimento in modo automatico perchè l'utente la sceglie in fase di selezione dettagli della Nota stessa.</p>
+<p>E’ sempre possibile emettere una nota di credito su fatture registrate nell’esercizio in corso (siano esse in stato “contabilizzato” che “pagato”); è possibile emettere note di credito su fatture registrate negli esercizi precedenti se sono in stato contabilizzato, qualora invece siano state pagate è possibile emettere la nota di credito solo se il pagamento è avvenuto nell’esercizio in corso.
 Sono di seguito illustrati i vari folder di cui si compone la maschera “Nota di credito”.</p>
 <p><strong>TESTATA</strong></p>
 <p>Analizziamo ora i vari campi presenti nel folder “Testata”</p>
@@ -840,9 +841,7 @@ Sono di seguito illustrati i vari folder di cui si compone la maschera “Nota d
 </div></blockquote>
 <p>Sono tutti ereditati dalla fattura a cui viene legata la nota di credito.</p>
 </li>
-<li><ol class="first upperalpha simple" start="14">
-<li>Nota di credito. Deve essere inserito il numero della nota di credito.</li>
-</ol>
+<li><p class="first">Numero Nota di credito. Deve essere inserito il numero della nota di credito.</p>
 </li>
 <li><p class="first">Descrizione. Il sistema riporta quello della fattura ma può essere modificata.</p>
 </li>
@@ -884,10 +883,9 @@ Descr. fattura origine. Viene riportata la descrizione del dettaglio della fattu
 <p>Dopo la contabilizzazione del dettaglio il sistema si posiziona sul folder storni. Si deve evidenziare la riga e cliccare sul pulsante aggiorna in manuale il sistema rimanda alla maschera degli impegni folder “scadenziario” sulla scadenza collegata al dettaglio della fattura: in caso di nota di credito per l’importo totale tale scadenza dovrà essere pari a zero (ricordarsi di modificare anche  il dettaglio scadenza);  in caso di nota di credito di  importo parziale  ridurre la scadenza per l’importo pari alla nota di credito, creare una nuova scadenza di pari importo della nota di credito (in caso di impegno residuo proprio) o ridurre di pari importo il totale dell’impegno di competenza o sui residui impropri; selezionare nuovamente la riga collegata alla fattura e cliccare su 'riporta'. Il sistema si riposizionerà nel folder storni della nota di credito e si può procedere al salvataggio della nota.</p>
 <p><strong>ACCERTAMENTI</strong></p>
 <p>Se la nota di credito è collegata ad una fattura pagata, e non sono presenti fatture dello stesso fornitore da pagare, il sistema, dopo la contabilizzazione del dettaglio,  propone la maschera della creazione e ricerca dell’accertamento. Dopo la compilazione dell’accertamento cliccando  su “riporta” si ritorna su questo folder e si devono scegliere le modalità di incasso (c/c ente).</p>
-<p><strong>RIVEDERE</strong>
-<strong>PROTOCOLLO</strong></p>
+<p><strong>PROTOCOLLO</strong></p>
 <p>Ai fini dell’inserimento nel registro IVA e per l’assegnazione del relativo numero al documento fiscale, è necessario protocollare.
-Con l'introduzione della Fatturazione elettronica non è più necessario effettuare il Protocollo manuale attraverso l'apposita funzionalità perchè questo avviene automaticamente in fase di registrazione del documento elettronico.</p>
+Con l'introduzione della Fatturazione elettronica non è più necessario effettuare il Protocollo manuale attraverso l'apposita funzionalità perchè questo avviene automaticamente in fase di firma del documento elettronico.</p>
 </div>
 
 
