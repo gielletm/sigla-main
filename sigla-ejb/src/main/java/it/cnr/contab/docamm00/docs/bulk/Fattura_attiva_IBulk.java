@@ -1,4 +1,4 @@
-	/*
+/*
  * Copyright (C) 2019  Consiglio Nazionale delle Ricerche
  *
  *     This program is free software: you can redistribute it and/or modify
@@ -23,6 +23,8 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import it.cnr.jada.bulk.OggettoBulk;
 import it.cnr.jada.util.action.CRUDBP;
+
+import java.sql.Timestamp;
 
 /**
  * Insert the type's description here.
