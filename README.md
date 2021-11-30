@@ -11,7 +11,7 @@
 [![<docs>](https://circleci.com/gh/consiglionazionaledellericerche/sigla-main.svg?style=shield)](https://consiglionazionaledellericerche.github.io/sigla-main)
 
 ## Provalo su Cloud Run
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fgielletm%2Fsigla-main.git)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fgielletm%2Fsigla-main.git&cloudshell_print=print.txt)
  
 ## MAVEN dependency
 |Artifact| Version |
