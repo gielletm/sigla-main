@@ -10,6 +10,9 @@
 [![<Build doc Status>](https://circleci.com/gh/consiglionazionaledellericerche/sigla-main.svg?style=svg)](https://app.circleci.com/pipelines/github/consiglionazionaledellericerche/sigla-main)
 [![<docs>](https://circleci.com/gh/consiglionazionaledellericerche/sigla-main.svg?style=shield)](https://consiglionazionaledellericerche.github.io/sigla-main)
 
+## Provalo su Cloud Run
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/gielletm/sigla-main.git)
+ 
 ## MAVEN dependency
 |Artifact| Version |
 |---|---|
