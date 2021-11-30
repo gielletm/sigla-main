@@ -1,0 +1,47 @@
+steps:
+# Build the webapp
+- name: maven:3-jdk-8
+  entrypoint: mvn
+  args: ['package','-Dmaven.test.skip=true']
+# Build the container image
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_IMAGE_NAME}', '--build-arg=JAR_FILE=target/sigla-thorntail.jar', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/${_IMAGE_NAME}']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'beta'
+  - 'run'
+  - 'deploy'
+  - '${_SERVICE_NAME}'
+  - '--image'
+  - 'gcr.io/$PROJECT_ID/${_IMAGE_NAME}'
+  - '--allow-unauthenticated'
+  - '--cpu'
+  - '4'
+  - '--memory'
+  - '8192Mi'
+  - '--min-instances'
+  - '1'
+  - '--max-instances'
+  - '1'
+  - '--set-env-vars'
+  - 'THORNTAIL_PROJECT_STAGE=demo-h2'
+  - '--no-use-http2'
+  - '--no-cpu-throttling'
+  - '--execution-environment'
+  - 'gen1'
+  - '--platform'
+  - 'managed'
+  - '--region'
+  - 'europe-west4'
+  - '--project'
+  - '$PROJECT_ID'
+substitutions:
+    _SERVICE_NAME: sigla-cloud-run
+    _IMAGE_NAME: sigla-cloud-run
+images:
+- gcr.io/$PROJECT_ID/${_IMAGE_NAME}
