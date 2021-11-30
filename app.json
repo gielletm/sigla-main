@@ -1,0 +1,24 @@
+{
+    "build": {
+        "skip": true
+        }
+    },
+    "hooks": {
+        "prebuild": {
+            "commands": [
+                "cd sigla-main", 
+                "gcloud builds submit --config cloudbuild.yaml"
+            ]
+        },
+        "precreate": {
+            "commands": [
+                "echo 'pre-create'"
+            ]
+        },
+        "postcreate": {
+            "commands": [
+                "echo 'pre-create'"
+            ]
+        }
+    }
+}
