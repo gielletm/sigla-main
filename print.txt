@@ -1,0 +1,9 @@
+imposta l'ID del progetto associato alla cloud shell con il seguente comando:
+
+> gcloud config set project [PROJECT_ID]
+
+(esempio: gcloud config set project cloud-run-tdig)
+
+e poi esegui il build e il deploy dell'applicatione con il seguente comando:
+
+> gcloud builds submit --config cloudbuild.yaml
