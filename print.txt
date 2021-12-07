@@ -1,8 +1,11 @@
-imposta l'ID del progetto associato alla cloud shell con il seguente comando:
+1-Imposta l'ID del progetto associato alla cloud shell con il seguente comando:
 
 > gcloud config set project [PROJECT_ID]
-
 (esempio: gcloud config set project cloud-run-tdig)
+
+
+2-Scarica e lancia lo script per preparare l'ambiente 
+> wget -O - https://raw.githubusercontent.com/gielletm/cloud-run-sigla-test/main/prepare.sh | bash
 
 e poi esegui il build e il deploy dell'applicatione con il seguente comando:
 
